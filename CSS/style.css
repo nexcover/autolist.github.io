@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 750px;
+    margin: auto;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li :hover {
+    color: black;
+}
+
+span {
+    color: red;
+}
+
+#textInput1,
+#textInput3 {
+    width: 50%;
+}
+
+#textInput4 {
+    width: 2%;
+}
+
+.eventContent {
+    height: 25px;
+    border: transparent;
+    font-size: 20px;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+     border: 1px solid black;
+     height: 30px;
+     border-collapse: collapse;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+.mokCha {
+    height: 50px;
+    padding-left: 7px;
+}
+
+#numberInput {
+    width: 80px;
+    height: 40px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.number-list {
+    display: flex;
+    height: 30px;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.number-item {
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.term {
+    padding-left: 7px;
+    height: 30px;
+}
+
+.Butt {
+    width: 50px;;
+    height: 40px;
+    position: relative;
+    top: -7px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
