@@ -33,7 +33,43 @@ span {
     width: 50%;
 }
 
+#textInput5,
+#textInput7 {
+    width: 50%;
+}
+
+#textInput9,
+#textInput11 {
+    width: 50%;
+}
+
+#textInput13,
+#textInput15 {
+    width: 50%;
+}
+
+#textInput17,
+#textInput19 {
+    width: 50%;
+}
+
 #textInput4 {
+    width: 3%;
+}
+
+#textInput8 {
+    width: 3%;
+}
+
+#textInput12 {
+    width: 3%;
+}
+
+#textInput16 {
+    width: 3%;
+}
+
+#textInput20 {
     width: 3%;
 }
 

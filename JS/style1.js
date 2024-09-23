@@ -230,8 +230,6 @@ function updateTotalCount() {
     document.getElementById('totalCount').textContent = totalCount;
 }
 
-
-
 // 텍스트 입력 및 새로고침 유지
 
 function saveTextInputs() {

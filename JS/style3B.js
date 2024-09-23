@@ -227,39 +227,39 @@ function updateTotalCount() {
 // 텍스트 입력 및 새로고침 유지
 
 function saveTextInputs() {
-    const textInput1 = document.getElementById('textInput1').value;
-    const textInput2 = document.getElementById('textInput2').value;
-    const textInput3 = document.getElementById('textInput3').value;
-    const textInput4 = document.getElementById('textInput4').value;
-    localStorage.setItem('textInput1', textInput1);
-    localStorage.setItem('textInput2', textInput2);
-    localStorage.setItem('textInput3', textInput3);
-    localStorage.setItem('textInput4', textInput4);
+    const textInput17 = document.getElementById('textInput17').value;
+    const textInput18 = document.getElementById('textInput18').value;
+    const textInput19 = document.getElementById('textInput19').value;
+    const textInput20 = document.getElementById('textInput20').value;
+    localStorage.setItem('textInput17', textInput17);
+    localStorage.setItem('textInput18', textInput18);
+    localStorage.setItem('textInput19', textInput19);
+    localStorage.setItem('textInput20', textInput20);
 }
 
 function loadTextInputs() {
-    const textInput1 = localStorage.getItem('textInput1');
-    const textInput2 = localStorage.getItem('textInput2');
-    const textInput3 = localStorage.getItem('textInput3');
-    const textInput4 = localStorage.getItem('textInput4');
-    if (textInput1) document.getElementById('textInput1').value = textInput1;
-    if (textInput2) document.getElementById('textInput2').value = textInput2;
-    if (textInput3) document.getElementById('textInput3').value = textInput3;
-    if (textInput4) document.getElementById('textInput4').value = textInput4;
+    const textInput17 = localStorage.getItem('textInput17');
+    const textInput18 = localStorage.getItem('textInput18');
+    const textInput19 = localStorage.getItem('textInput19');
+    const textInput20 = localStorage.getItem('textInput20');
+    if (textInput17) document.getElementById('textInput17').value = textInput17;
+    if (textInput18) document.getElementById('textInput18').value = textInput18;
+    if (textInput19) document.getElementById('textInput19').value = textInput19;
+    if (textInput20) document.getElementById('textInput20').value = textInput20;
 }
 
 function resetTextInputs() {
-    document.getElementById('textInput1').value = '';
-    document.getElementById('textInput2').value = '';
-    document.getElementById('textInput3').value = '';
-    document.getElementById('textInput4').value = '';
-    localStorage.removeItem('textInput1');
-    localStorage.removeItem('textInput2');
-    localStorage.removeItem('textInput3');
-    localStorage.removeItem('textInput4');
+    document.getElementById('textInput17').value = '';
+    document.getElementById('textInput18').value = '';
+    document.getElementById('textInput19').value = '';
+    document.getElementById('textInput20').value = '';
+    localStorage.removeItem('textInput17');
+    localStorage.removeItem('textInput18');
+    localStorage.removeItem('textInput19');
+    localStorage.removeItem('textInput20');
 }
 
-document.getElementById('textInput1').addEventListener('input', saveTextInputs);
-document.getElementById('textInput2').addEventListener('input', saveTextInputs);
-document.getElementById('textInput3').addEventListener('input', saveTextInputs);
-document.getElementById('textInput4').addEventListener('input', saveTextInputs);
+document.getElementById('textInput17').addEventListener('input', saveTextInputs);
+document.getElementById('textInput18').addEventListener('input', saveTextInputs);
+document.getElementById('textInput19').addEventListener('input', saveTextInputs);
+document.getElementById('textInput20').addEventListener('input', saveTextInputs);
