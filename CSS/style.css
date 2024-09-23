@@ -73,6 +73,26 @@ span {
     width: 3%;
 }
 
+#textInput2 {
+    width: 5%;
+}
+
+#textInput6 {
+    width: 5%;
+}
+
+#textInput10 {
+    width: 5%;
+}
+
+#textInput14 {
+    width: 5%;
+}
+
+#textInput18 {
+    width: 5%;
+}
+
 .eventContent {
     height: 25px;
     border: transparent;
@@ -97,6 +117,7 @@ p {
 }
 
 .mokCha {
+    width: 13%;
     height: 50px;
     padding-left: 7px;
 }
