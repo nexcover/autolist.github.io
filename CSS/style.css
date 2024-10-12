@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -93,6 +93,95 @@ span {
     width: 5%;
 }
 
+#textInput21,
+#textInput22,
+#textInput23,
+#textInput24,
+#textInput25,
+#textInput26,
+#textInput27,
+#textInput28,
+#textInput29,
+#textInput30,
+#textInput31,
+#textInput32,
+#textInput33,
+#textInput34,
+#textInput35,
+#textInput36 {
+    width: 110px;
+    text-align: center;
+}
+
+#textInput37,
+#textInput38,
+#textInput39,
+#textInput40,
+#textInput41,
+#textInput42,
+#textInput43,
+#textInput43,
+#textInput44,
+#textInput45,
+#textInput46,
+#textInput47,
+#textInput48,
+#textInput49,
+#textInput50,
+#textInput51,
+#textInput52,
+#textInput53,
+#textInput54 {
+    width: 110px;
+    text-align: center;
+}
+
+#textInput55,
+#textInput56,
+#textInput57,
+#textInput58,
+#textInput59,
+#textInput60,
+#textInput61,
+#textInput62,
+#textInput63,
+#textInput64 {
+    width: 110px;
+    text-align: center;
+}
+
+#textInput65,
+#textInput66,
+#textInput67,
+#textInput68,
+#textInput69,
+#textInput70,
+#textInput71,
+#textInput72,
+#textInput73,
+#textInput74, 
+#textInput75, 
+#textInput76, 
+#textInput77, 
+#textInput78, 
+#textInput79, 
+#textInput80 {
+    width: 110px;
+    text-align: center;
+}
+
+#textInput81,
+#textInput82,
+#textInput83,
+#textInput84,
+#textInput85,
+#textInput86,
+#textInput87,
+#textInput88 {
+    width: 110px;
+    text-align: center;
+}
+
 .eventContent {
     height: 25px;
     border: transparent;
@@ -106,9 +195,9 @@ table {
 }
 
 td {
-     border: 1px solid black;
-     height: 30px;
-     border-collapse: collapse;
+    border: 1px solid black;
+    height: 30px;
+    border-collapse: collapse;
 }
 
 h1,
@@ -148,7 +237,8 @@ p {
 }
 
 .Butt {
-    width: 50px;;
+    width: 50px;
+    ;
     height: 40px;
     position: relative;
     top: -5px;
@@ -158,4 +248,17 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#modal {
+    width: 100%;
+}
+
+#modal.hidden {
+    display: none;
+}
+
+#toggleButton {
+    width: 100%;
+    height: 100%;
 }

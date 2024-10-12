@@ -231,10 +231,26 @@ function saveTextInputs() {
     const textInput18 = document.getElementById('textInput18').value;
     const textInput19 = document.getElementById('textInput19').value;
     const textInput20 = document.getElementById('textInput20').value;
+    const textInput81 = document.getElementById('textInput81').value;
+    const textInput82 = document.getElementById('textInput82').value;
+    const textInput83 = document.getElementById('textInput83').value;
+    const textInput84 = document.getElementById('textInput84').value;
+    const textInput85 = document.getElementById('textInput85').value;
+    const textInput86 = document.getElementById('textInput86').value;
+    const textInput87 = document.getElementById('textInput87').value;
+    const textInput88 = document.getElementById('textInput88').value;
     localStorage.setItem('textInput17', textInput17);
     localStorage.setItem('textInput18', textInput18);
     localStorage.setItem('textInput19', textInput19);
     localStorage.setItem('textInput20', textInput20);
+    localStorage.setItem('textInput81', textInput81);
+    localStorage.setItem('textInput82', textInput82);
+    localStorage.setItem('textInput83', textInput83);
+    localStorage.setItem('textInput84', textInput84);
+    localStorage.setItem('textInput85', textInput85);
+    localStorage.setItem('textInput86', textInput86);
+    localStorage.setItem('textInput87', textInput87);
+    localStorage.setItem('textInput88', textInput88);
 }
 
 function loadTextInputs() {
@@ -242,10 +258,26 @@ function loadTextInputs() {
     const textInput18 = localStorage.getItem('textInput18');
     const textInput19 = localStorage.getItem('textInput19');
     const textInput20 = localStorage.getItem('textInput20');
+    const textInput81 = localStorage.getItem('textInput81');
+    const textInput82 = localStorage.getItem('textInput82');
+    const textInput83 = localStorage.getItem('textInput83');
+    const textInput84 = localStorage.getItem('textInput84');
+    const textInput85 = localStorage.getItem('textInput85');
+    const textInput86 = localStorage.getItem('textInput86');
+    const textInput87 = localStorage.getItem('textInput87');
+    const textInput88 = localStorage.getItem('textInput88');
     if (textInput17) document.getElementById('textInput17').value = textInput17;
     if (textInput18) document.getElementById('textInput18').value = textInput18;
     if (textInput19) document.getElementById('textInput19').value = textInput19;
     if (textInput20) document.getElementById('textInput20').value = textInput20;
+    if (textInput81) document.getElementById('textInput81').value = textInput81;
+    if (textInput82) document.getElementById('textInput82').value = textInput82;
+    if (textInput83) document.getElementById('textInput83').value = textInput83;
+    if (textInput84) document.getElementById('textInput84').value = textInput84;
+    if (textInput85) document.getElementById('textInput85').value = textInput85;
+    if (textInput86) document.getElementById('textInput86').value = textInput86;
+    if (textInput87) document.getElementById('textInput87').value = textInput87;
+    if (textInput88) document.getElementById('textInput88').value = textInput88;
 }
 
 function resetTextInputs() {
@@ -253,13 +285,37 @@ function resetTextInputs() {
     document.getElementById('textInput18').value = '';
     document.getElementById('textInput19').value = '';
     document.getElementById('textInput20').value = '';
+    document.getElementById('textInput81').value = '';
+    document.getElementById('textInput82').value = '';
+    document.getElementById('textInput83').value = '';
+    document.getElementById('textInput84').value = '';
+    document.getElementById('textInput85').value = '';
+    document.getElementById('textInput86').value = '';
+    document.getElementById('textInput87').value = '';
+    document.getElementById('textInput88').value = '';
     localStorage.removeItem('textInput17');
     localStorage.removeItem('textInput18');
     localStorage.removeItem('textInput19');
     localStorage.removeItem('textInput20');
+    localStorage.removeItem('textInput81');
+    localStorage.removeItem('textInput82');
+    localStorage.removeItem('textInput83');
+    localStorage.removeItem('textInput84');
+    localStorage.removeItem('textInput85');
+    localStorage.removeItem('textInput86');
+    localStorage.removeItem('textInput87');
+    localStorage.removeItem('textInput88');
 }
 
 document.getElementById('textInput17').addEventListener('input', saveTextInputs);
 document.getElementById('textInput18').addEventListener('input', saveTextInputs);
 document.getElementById('textInput19').addEventListener('input', saveTextInputs);
 document.getElementById('textInput20').addEventListener('input', saveTextInputs);
+document.getElementById('textInput81').addEventListener('input', saveTextInputs);
+document.getElementById('textInput82').addEventListener('input', saveTextInputs);
+document.getElementById('textInput83').addEventListener('input', saveTextInputs);
+document.getElementById('textInput84').addEventListener('input', saveTextInputs);
+document.getElementById('textInput85').addEventListener('input', saveTextInputs);
+document.getElementById('textInput86').addEventListener('input', saveTextInputs);
+document.getElementById('textInput87').addEventListener('input', saveTextInputs);
+document.getElementById('textInput88').addEventListener('input', saveTextInputs);

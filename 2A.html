@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/style.css" rel="stylesheet">
     <script defer src="JS/style2A.js"></script>
-    <title>2A홀 계량기검침일지</title>
+    <script defer src="JS/modal.js"></script>
+    <title>2A</title>
 </head>
 
 <body>
@@ -85,8 +86,12 @@
         </tr>
         <tr>
             <td style="width: 12%;" class="term">103A</td>
-            <td></td>
-            <td></td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput37" class="eventContent">
+            </td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput38" class="eventContent">
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -101,8 +106,12 @@
         </tr>
         <tr>
             <td class="term">103B</td>
-            <td></td>
-            <td></td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput39" class="eventContent">
+            </td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput40" class="eventContent">
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -117,8 +126,12 @@
         </tr>
         <tr>
             <td class="term">103C</td>
-            <td></td>
-            <td></td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput41" class="eventContent">
+            </td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput42" class="eventContent">
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -133,8 +146,12 @@
         </tr>
         <tr>
             <td class="term">103D</td>
-            <td></td>
-            <td></td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput43" class="eventContent">
+            </td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput44" class="eventContent">
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -149,8 +166,12 @@
         </tr>
         <tr>
             <td class="term">103E</td>
-            <td></td>
-            <td></td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput45" class="eventContent">
+            </td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput46" class="eventContent">
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -165,8 +186,12 @@
         </tr>
         <tr>
             <td class="term">103F</td>
-            <td></td>
-            <td></td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput47" class="eventContent">
+            </td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput48" class="eventContent">
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -181,8 +206,12 @@
         </tr>
         <tr>
             <td class="term">103G <span> (G/H)</span></td>
-            <td></td>
-            <td></td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput49" class="eventContent">
+            </td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput50" class="eventContent">
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -197,8 +226,12 @@
         </tr>
         <tr>
             <td class="term">103H</td>
-            <td></td>
-            <td></td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput51" class="eventContent">
+            </td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput52" class="eventContent">
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -213,8 +246,12 @@
         </tr>
         <tr>
             <td class="term">103J <span>(G/H)</span></td>
-            <td></td>
-            <td></td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput53" class="eventContent">
+            </td>
+            <td style="width: 124px;">
+                <input type="text" id="textInput54" class="eventContent">
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -264,27 +301,30 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td><div id="toggleButton"></div></td>
         </tr>
 
     </table>
-    <div class="footer">
-        <div>
-            <input type="number" id="numberInput" min="103" max="199" onkeydown="if(event.key === 'Enter') addNumber()">
-            <button onclick="resetNumbers()" class="Butt">리셋</button>
-            <button onclick="toggleSort()" class="Butt">정렬</button>
+    <div id="modal">
+        <div class="footer">
+            <div>
+                <input type="number" id="numberInput" min="101" max="199"
+                    onkeydown="if(event.key === 'Enter') addNumber()">
+                <button onclick="resetNumbers()" class="Butt">리셋</button>
+                <button onclick="toggleSort()" class="Butt">정렬</button>
+            </div>
+            <div>
+                <input type="radio" id="black" name="color" value="black" checked>
+                <label for="black">Black</label>
+                <input type="radio" id="blue" name="color" value="blue">
+                <label for="blue">Blue</label>
+                <input type="radio" id="red" name="color" value="red">
+                <label for="red">Red</label>
+                <input type="radio" id="green" name="color" value="green">
+                <label for="green">Green</label>
+            </div>
+            <div>Total Count: <span id="totalCount">0</span></div>
         </div>
-        <div>
-            <input type="radio" id="black" name="color" value="black" checked>
-            <label for="black">Black</label>
-            <input type="radio" id="blue" name="color" value="blue">
-            <label for="blue">Blue</label>
-            <input type="radio" id="red" name="color" value="red">
-            <label for="red">Red</label>
-            <input type="radio" id="green" name="color" value="green">
-            <label for="green">Green</label>
-        </div>
-        <div>Total Count: <span id="totalCount">0</span></div>
     </div>
 </body>
 
